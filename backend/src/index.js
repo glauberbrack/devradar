@@ -10,7 +10,7 @@ const server = http.Server(app);
 
 setupWebSocket(server);
 
-mongoose.connect('mongodb+srv://glauberbrack:CVSlRkBXlliFQuwI@cluster0-1a75u.mongodb.net/devradar?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://{user}:{password}@cluster0-1a75u.mongodb.net/devradar?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
